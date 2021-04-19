@@ -13,5 +13,6 @@ app = Flask(__name__)
 #TEMPLATES RENDERING
 
 @app.route('/')
+@app.route('/home')
 def home_page():
     return render_template('home.html')
