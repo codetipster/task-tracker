@@ -16,3 +16,8 @@ app = Flask(__name__)
 @app.route('/home')
 def home_page():
     return render_template('home.html')
+
+# marketpage: sending data to templates
+@app.route('/market')
+def market_page():
+    return render_template('market.html', item_name='Macbook')    
