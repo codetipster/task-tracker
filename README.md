@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return "Hello World!"
+    return "Hello world"
 
 run:
   `export FLASK_APP=market.py`
@@ -33,3 +33,5 @@ then run:
 to serve the basic "Hello World".
 
 Congratulations, you just served a basic script using flask.
+
+Moving forward, to let your server reload your changes almost automatically without having to start your server each time with `$flask run` , just run the following command ` export FLASK_DEBUG=1` 
