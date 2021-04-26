@@ -34,5 +34,5 @@ def register_page():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login_page():
-    form = LoginForm
+    form = LoginForm()
     return render_template('login.html', form=form)    
